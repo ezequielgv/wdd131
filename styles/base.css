@@ -100,7 +100,7 @@ main {
     grid-template-columns: 75% 25%;
 }
 
-.card {
+.card, .my-info {
     background-color: var(--color-background-cream);
     border: 2px solid var(--color-text-primary);
     box-shadow: -5px 5px var(--color-text-primary-75);
