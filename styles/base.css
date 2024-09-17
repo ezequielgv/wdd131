@@ -101,7 +101,6 @@ main {
     grid-template-columns: 75% 25%;
 }
 
-
 .card {
     background-color: var(--color-background-cream);
     border: 2px solid var(--color-text-primary);
@@ -149,10 +148,14 @@ main {
     width: 100%;
 }
 
-.card img{
+.img-me{
     margin: 0px;
     height: 210px;
     width: 150px;
+}
+
+.card img{
+    margin-top: 10px;
     border: 2px solid var(--color-text-primary);
     border-radius: 5px;
     box-shadow: -3px 3px 2px 2px var(--color-text-primary-75);
@@ -162,6 +165,13 @@ main {
 .card img:hover {
     transform: scale(1.1);
     box-shadow: -3px 3px 2px 2px var(--color-text-primary-75);
+}
+
+.img-argentina{
+    margin: 0px;
+    height: 105px;
+    width: 150px;
+
 }
 
 footer {
