@@ -73,14 +73,15 @@ nav {
 }
 
 nav ul{ 
+    list-style: none;
     display: flex;
-    list-style: none; 
     justify-content: center;
 }
 
+a { text-decoration: none; }
+
 nav a {
     color: var(--color-text-primary);
-    text-decoration: none;
     padding: 10px;
     margin: 5px;
 }
@@ -100,16 +101,52 @@ main {
     grid-template-columns: 75% 25%;
 }
 
-.card, .my-info {
+
+.card {
     background-color: var(--color-background-cream);
     border: 2px solid var(--color-text-primary);
-    box-shadow: -5px 5px var(--color-text-primary-75);
+    box-shadow: -3px 3px 2px 2px var(--color-text-primary-75);
     border-radius: 5px;
     margin: 5px;
     padding: 25px;
+}
+
+.card-my-info {
     display: grid;
     grid-template-columns: 175px auto;
     overflow: hidden;
+}
+
+.card-web-tools h2{ text-align: center; }
+
+.card-web-tools ul{
+    margin-top: 25px;
+    list-style: none;    
+}
+
+.card-web-tools li{
+    padding: 5px;
+    list-style: none;
+}
+
+.card-web-tools a{
+    position: relative;
+    color: var(--color-text-primary);
+}
+
+.card-web-tools a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-text-primary);
+    transition: width 0.3s ease-in-out;
+}
+
+.card-web-tools a:hover::after {
+    width: 100%;
 }
 
 .card img{
@@ -118,13 +155,13 @@ main {
     width: 150px;
     border: 2px solid var(--color-text-primary);
     border-radius: 5px;
-    box-shadow: -5px 5px var(--color-text-primary-75);
+    box-shadow: -3px 3px 2px 2px var(--color-text-primary-75);
     transition: transform 0.3s ease;
 }
 
 .card img:hover {
     transform: scale(1.1);
-    box-shadow: -5px 5px var(--color-text-primary-75);
+    box-shadow: -3px 3px 2px 2px var(--color-text-primary-75);
 }
 
 footer {
