@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-background-light-gray: #e8e8e8; /* Section or card background color - Light Gray for subtle separation */
+    --color-background-cream: #FF80AB; /* Main background color - Pink */
+    --color-accent-violet: #6200EA ; /* Accent color - Violet for buttons and links */
+    --color-accent-orange: #ff6347; /* Secondary accent color - Orange for highlights or secondary actions */
+    --color-text-primary: #333333; /* Primary text color */
+    --color-text-primary-75: #333333cb; /* Primary text color */
+    --color-text-primary-50: #33333388; /* Primary text color */
+}
+
+/* Fonts  */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+/* /Fonts  */
+
+body { 
+    background-color: var(--color-background-light-gray); 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+}
+
+header h1{
+    background-color: var(--color-text-primary);
+    color: var(--color-background-cream);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--color-background-cream);
+    box-shadow: 0px 5px 15px rgba(158, 85, 109, 0.75);
+    padding: 15px;
+}
+
+nav ul{ 
+    display: flex;
+    list-style: none; 
+    justify-content: center;
+}
+
+nav a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: var(--color-accent-violet);
+    color: var(--color-background-light-gray);
+    transition: background-color 1s;
+    padding: 16px 10px 16px 10px;
+}
+
+main {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.card {
+    background-color: var(--color-background-cream);
+    border: 2px solid var(--color-text-primary);
+    box-shadow: -5px 5px var(--color-text-primary-75);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 175px auto;
+    overflow: hidden;
+}
+
+.card img{
+    margin: 0px;
+    height: 210px;
+    width: 150px;
+    border: 2px solid var(--color-text-primary);
+    border-radius: 5px;
+    box-shadow: -5px 5px var(--color-text-primary-75);
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    box-shadow: -5px 5px var(--color-text-primary-75);
+}
+
+footer {
+    background-color: var(--color-text-primary);
+    padding: 25px;
+    color: whitesmoke;
+}
