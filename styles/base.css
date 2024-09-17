@@ -105,7 +105,7 @@ main {
 .card {
     background-color: var(--color-background-cream);
     border: 2px solid var(--color-text-primary);
-    box-shadow: -3px 3px 2px 2px var(--color-text-primary-75);
+    box-shadow: -3px 3px 2px 2px var(--color-text-primary-75); 
     border-radius: 5px;
     margin: 5px;
     padding: 25px;
