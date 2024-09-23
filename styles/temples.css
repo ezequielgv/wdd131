@@ -1,14 +1,8 @@
 /* Media Query */
 @media (min-width: 769px) {
     .sm-only { display: none !important; }
-
-    nav {
-        position: static;
-        background-color: #252422;
-    }
-
+    nav { position: static; }
     nav ul { flex-direction: row; }
-
     nav ul li { margin: 0 15px; }
 }
 

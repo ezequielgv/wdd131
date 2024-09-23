@@ -14,29 +14,15 @@
 
 /* General Classes*/
 .bg-white { background-color: var(--color-white);}
-.bg-grey { background-color: var(--color-grey);}
 .bg-black { background-color: var(--color-black);}
-.bg-orange { background-color: var(--color-orange);}
 
 .txt-white { color: var(--color-white);}
 .txt-grey { color: var(--color-grey);}
 .txt-black { color: var(--color-black);}
 .txt-orange { color: var(--color-orange);}
 
-.txt-white-hover:hover { 
-    color: var(--color-white);
-    text-decoration: underline;
-}
 .txt-grey-hover:hover { 
     color: var(--color-grey);
-    text-decoration: underline;
-}
-.txt-black-hover:hover { 
-    color: var(--color-black);
-    text-decoration: underline;
-}
-.txt-orange-hover:hover { 
-    color: var(--color-orange);
     text-decoration: underline;
 }
 /* General Classes*/
@@ -84,7 +70,7 @@ nav ul li { margin: 10px 0; }
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 h1 { font-size: 1.5rem; }
