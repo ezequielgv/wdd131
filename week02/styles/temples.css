@@ -1,0 +1,27 @@
+/* Media Query */
+@media (min-width: 769px) {
+    .sm-only { display: none !important; }
+
+    nav {
+        position: static;
+        background-color: #252422;
+    }
+
+    nav ul { flex-direction: row; }
+
+    nav ul li { margin: 0 15px; }
+}
+
+@media (max-width: 768px) {
+    .sm-hidden { display: none !important; }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 75%;
+        height: auto;
+    }
+}

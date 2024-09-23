@@ -22,3 +22,7 @@ button.addEventListener('click', function() {
         });
     }
 });
+
+
+const msg = document.querySelector('span');
+alert(msg);
