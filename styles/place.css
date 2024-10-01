@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --primary-color: #d50000;
     --secondary-color-75: #008000ce;
@@ -14,8 +15,6 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
-
-p { line-height: 1.5; }
 
 header {
     background-color: var(--primary-color);
@@ -96,6 +95,7 @@ header {
 }
 
 .d-m{ display: none; } /* Display Movil */
+p { line-height: 1.5; }
 
 @media (max-width: 600px) { 
 
