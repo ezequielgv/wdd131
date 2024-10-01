@@ -36,14 +36,12 @@ header {
 /* positioning */
 .content { position: relative; }
 
-/*position-top-start*/
-.p-t-s {
+.p-t-s { /*position-top-start*/
     top: 20px;
     left: 20px;
 }
 
-/*position-bottom-end*/
-.p-b-e {
+.p-b-e { /*position-bottom-end*/
     bottom: 20px;
     right: 20px;
 }
