@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ezequiel Videla">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. I am Ezequiel Videla, a student showcasing my web development experience and technical skills.">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header"> Madagascar </div>
+
+        <div class="content">
+
+            <picture>
+                <source srcset="images/place-background-600x900.jpg" media="(max-width: 600px)">
+                <source srcset="images/place-background-600x900.jpg" media="(max-width: 400px)">
+                <img src="images/place-background.jpg" alt="Lemurs in Madagascar" class="hero-image">
+            </picture>
+
+            <div class="card p-t-s">
+                <div class="card-title">
+                    <h3>Data</h3>
+                </div>
+                <div class="card-body">
+                    <p>Area: 587,041 sq km</p>
+                    <p>Population: 27,691,018</p>
+                    <p>Capital: Antananarivo</p>
+                    <p>Languages: Malagasy, French</p>
+                    <p>Currency: Malagasy Ariary</p>
+                    <p>Time Zone: UTC+3</p>
+                    <p>Calling Code: +261</p>
+                    <p>Internet TLD: .mg</p>
+                </div>
+            </div>
+
+            <div class="card p-b-e">
+                <div class="card-title weather">
+                    <h3>Weather</h3>
+                </div>
+                <div class="card-body">
+                    <p>Temperature: 10°C</p>
+                    <p>Conditions: Partly Cloudy</p>
+                    <p>Wind: 5 km/h</p>
+                    <p>Wind Chill: <span class="wind-chill"></span>°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        ©<span id="currentyear"></span> 🍃 Rubia Magdelena Francesco 🍃 Madagascar<br>
+        Last Modification: <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

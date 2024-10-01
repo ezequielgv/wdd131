@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #d50000;
+    --secondary-color-75: #008000ce;
+    --color-white: #f0f0f0;
+    --background-color: rgba(255, 255, 255, 0.7);
+    --text-color: #000;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+p { line-height: 1.5; }
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* positioning */
+.content { position: relative; }
+
+/*position-top-start*/
+.p-t-s {
+    top: 20px;
+    left: 20px;
+}
+
+/*position-bottom-end*/
+.p-b-e {
+    bottom: 20px;
+    right: 20px;
+}
+/* positioning */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--text-color);
+    padding: 15px 15px 15px 0px;
+    border-radius: 5px;
+}
+
+.card-title {
+    background-color: var(--secondary-color-75);
+    margin-top: 0;
+    margin-left: -10px;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.weather h3:after {
+    content: '☀️';
+    margin-left: 10px;
+}
+
+.card-body{
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) { 
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+    }
+
+    .hero-image {
+        grid-row: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        position: static;
+        box-sizing: border-box;
+        margin: 0px 15px 10px 15px ;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    .weather h3:after { display: none; }
+
+    .p-t-s, .p-b-e {
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+    }
+
+    .p-t-s { grid-row: 2 / 3; }
+    .p-b-e { grid-row: 3 / 4; }
+}
