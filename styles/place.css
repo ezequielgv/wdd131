@@ -78,6 +78,11 @@ header {
     margin-left: 10px;
 }
 
+.weather-icon {
+    height: 40px;
+    width: auto;
+}
+
 .card-body{
     padding-top: 15px;
     padding-left: 15px;
@@ -91,6 +96,8 @@ header {
     font-size: 15px;
     text-align: center;
 }
+
+.d-m{ display: none; } /* Display Movil */
 
 @media (max-width: 600px) { 
 
@@ -125,4 +132,5 @@ header {
 
     .p-t-s { grid-row: 2 / 3; }
     .p-b-e { grid-row: 3 / 4; }
+    .d-m{ display: block; } /* Display Movil */
 }
