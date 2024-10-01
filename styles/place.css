@@ -17,7 +17,7 @@ body {
 
 p { line-height: 1.5; }
 
-.header {
+header {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
