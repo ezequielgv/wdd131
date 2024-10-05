@@ -5,20 +5,20 @@
 
 :root {
     --primary-color: #d50000;
-    --secondary-color-75: #008000ce;
+    --secondary-color-75: #226d22ce;
     --color-white: #f0f0f0;
     --background-color: rgba(255, 255, 255, 0.7);
     --text-color: #000;
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
     font-family: Arial, sans-serif;
 }
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--color-white);
     text-align: center;
     padding: 35px;
     font-weight: bold;
@@ -115,7 +115,7 @@ p { line-height: 1.5; }
     .card {
         position: static;
         box-sizing: border-box;
-        margin: 0px 15px 10px 15px ;
+        margin: 0px 15px 10px 15px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
     }
 
