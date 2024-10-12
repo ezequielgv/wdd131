@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --color-white: #FFFCF2;
+    --color-grey: #CCC5B9;
+    --color-black: #252422;
+    --color-orange: #EB5E28;
+}
+
+/* General Classes*/
+.bg-white { background-color: var(--color-white);}
+.bg-black { background-color: var(--color-black);}
+
+.txt-white { color: var(--color-white);}
+.txt-grey { color: var(--color-grey);}
+.txt-black { color: var(--color-black);}
+.txt-orange { color: var(--color-orange);}
+
+.txt-grey-hover:hover { 
+    color: var(--color-grey);
+    text-decoration: underline;
+}
+/* General Classes*/
+
+body {
+    line-height: 1.6;
+    padding: 0px;
+}
+
+/* Header */
+header {
+    padding: 15px 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-burguer {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    background-color: var(--color-black);
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li { margin: 10px 0; }
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+h1 { font-size: 1.5rem; }
+/* Header */
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+main h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.temples-list { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5px;
+    padding: 10px;
+    border: solid 1px var(--color-black);
+    border-radius: 5px;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+    box-shadow: var(--color-grey);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.24);
+}
+
+img {
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Main */
+
+/* Footer */
+footer {
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Footer */
