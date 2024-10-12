@@ -70,11 +70,6 @@ nav ul li { margin: 10px 0; }
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--color-grey);
 }
 
 h1 { font-size: 1.5rem; }
@@ -111,12 +106,6 @@ main h2 {
     border-radius: 5px;
     background-color: var(--color-white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.temple-card:hover {
-    box-shadow: var(--color-grey);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.24);
 }
 
 img {
