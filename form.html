@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Product Review Form</h1>
+    </header>
+    <main class="main">
+        <form action="review.html" method="get" class="card-form">
+            <div class="form-group">
+                <label for="select-products" class="form-label">Product Name: <span class="required">*</span></label>
+                <select name="select-products" id="select-products" class="form-select" required>
+                    <option disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Overall Rating: <span class="required">*</span></label>
+                <div class="star-rating">
+                    <input type="radio" name="star-radio" id="star-radio-5" value="5" required>
+                    <label for="star-radio-5" title="5 stars">★</label>
+                    <input type="radio" name="star-radio" id="star-radio-4" value="4" required>
+                    <label for="star-radio-4" title="4 stars">★</label>
+                    <input type="radio" name="star-radio" id="star-radio-3" value="3" required>
+                    <label for="star-radio-3" title="3 stars">★</label>
+                    <input type="radio" name="star-radio" id="star-radio-2" value="2" required>
+                    <label for="star-radio-2" title="2 stars">★</label>
+                    <input type="radio" name="star-radio" id="star-radio-1" value="1" required>
+                    <label for="star-radio-1" title="1 star">★</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="date-installation" class="form-label">Date of installation <span class="required">*</span></label>
+                <input type="date" name="date-installation" id="date-installation" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Which features did you find useful in the product? <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="feature" id="feature1" value="Aesthetic design" class="form-checkbox">
+                        <label for="feature1" class="checkbox-label">Aesthetic design</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="feature" id="feature2" value="Connectivity" class="form-checkbox">
+                        <label for="feature2" class="checkbox-label">Connectivity (WiFi, Bluetooth, etc.)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="feature" id="feature3" value="Energy efficiency" class="form-checkbox">
+                        <label for="feature3" class="checkbox-label">Energy efficiency</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="feature" id="feature4" value="Durability" class="form-checkbox">
+                        <label for="feature4" class="checkbox-label">Durability</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="written-review" class="form-label">Written Review <span class="optional">(optional)</span></label>
+                <textarea name="written-review" id="written-review" class="form-textarea"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="user-name" class="form-label">Your name: <span class="optional">(optional)</span></label>
+                <input type="text" name="user-name" id="user-name" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Review" class="form-submit">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p id="footer-text" class="footer__text"></p>
+    </footer>
+</body>
+</html>
