@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     max-width: 800px;
@@ -8,11 +8,15 @@ body {
 }
 
 h1 {
+    font-family: 'Montserrat', sans-serif;
     color: #8B0000;
     border-bottom: 2px solid #8B0000;
 }
 
-h2 { color: #B22222; }
+h2 { 
+    font-family: 'Montserrat', sans-serif;
+    color: #DC143C;
+}
 
 .color-sample {
     display: inline-block;
@@ -21,3 +25,9 @@ h2 { color: #B22222; }
     margin-right: 10px;
     vertical-align: middle;
 }
+
+.dark-red { background-color: #8B0000; }
+.crimson { background-color: #DC143C; }
+.misty-rose { background-color: #FFE4E1; }
+.white { background-color: #FFFFFF; }
+.dark-gray { background-color: #333333; }
