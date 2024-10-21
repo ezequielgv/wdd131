@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
+    <meta name="author" content="Ezequiel Videla">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. I am Ezequiel Videla, a student showcasing my web development experience and technical skills.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+    <title>Product Review Form</title>
 </head>
 <body>
     <header class="header">
@@ -16,7 +22,7 @@
             <div class="form-group">
                 <label for="select-products" class="form-label">Product Name: <span class="required">*</span></label>
                 <select name="select-products" id="select-products" class="form-select" required>
-                    <option disabled selected>Select a Product ...</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </div>
 
@@ -74,7 +80,7 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Submit Review" class="form-submit">
+                <input type="submit" value="Submit" class="form-submit">
             </div>
         </form>
     </main>
