@@ -250,3 +250,79 @@
     color: var(--primary-color);
     background-color: var(--background-color);
 }
+
+/* contact us */
+
+/* form */
+/* Contact Form and Info */
+.contact-section { padding: 40px 0; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0 5%;
+}
+
+.contact-form, .contact-info {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-form h2, .contact-info h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.studio-hours ul, .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.follow-us h3 {
+    margin-top: 15px;
+}
+
+.follow-us .social-links {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+.follow-us .social-links a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.follow-us .social-links a:hover { 
+    color: var(--dark-red); 
+    border: none;
+}
