@@ -1,0 +1,130 @@
+/* Cellphones */
+@media (max-width: 768px) {
+    /* Header */
+    .header .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+        grid-column: 1;
+    }
+
+    nav {
+        grid-column: 1;
+        padding-top: 20px;
+    }
+
+    .nav-links { justify-content: center; }
+
+    /* Hero */
+    .hero h1 { 
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero p { 
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    /* Services */
+    .service-list, .artist-list { 
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .artist-item { 
+        width: 90%;
+        margin: 0 auto 35px auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    /* Container Services */
+    .container-services .service {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container-services .image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .reverse .text, .reverse .image { order: unset; }
+
+    /* Equipment Section */
+    .equipment { grid-template-columns: 1fr; }
+
+    .equipment h2 { margin-left: 0; }
+
+    /* Artists Cards */
+    .cards-artist-list {
+        grid-template-columns: 1fr;
+        margin: 0 5%;
+    }
+
+    /* Testimonials */
+    .testimonial-grid { grid-template-columns: 1fr; }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* footer */
+    .footer{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 100px 150px 100px;
+    }
+
+    .about-us { 
+        grid-column: 1/2;
+        grid-row: 1/2; 
+        margin-left: 15px;
+    }
+
+    .quick-links { 
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        margin-left: 15px;
+    }
+
+    .follow-us { 
+        grid-column: 1/2;
+        grid-row: 3/4; 
+        margin-left: 15px;
+    }
+}
+
+/* Breakpoint for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header */
+    .header .container { grid-template-columns: 1fr 2fr; }
+    .logo { margin-left: 20px; }
+
+    /* Services */
+    .service-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-item { width: calc(50% - 20px); }
+
+    /* Artists Cards */
+    .cards-artist-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 0 5%;
+    }
+
+    /* Container Services */
+    .container-services .image { width: 95%; }
+
+    /* Contact */
+    .contact-grid { gap: 30px; }
+}

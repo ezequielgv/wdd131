@@ -143,13 +143,3 @@ button:hover {
     text-align: left;
 }
 /* testimonial Card */
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 3.5rem; }
-    .hero p { font-size: 1.5rem; }
-
-    .service-list, .artist-list { flex-direction: column; }
-    .artist-item { margin-left: 15%; }
-
-}
