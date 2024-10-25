@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Harmony Studios</title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Studios - Home</title>
+    <link rel="stylesheet" href="styles/styles_general.css">
+    <link rel="stylesheet" href="styles/styles_layout.css">
+    <link rel="stylesheet" href="styles/styles_components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="/">Logo</a>
+                <a href="index.html"> <img src="images/logo-harmony-studios.png" alt=""></a>
             </div>
             <nav>
                 <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/artists">Artists</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,12 +28,12 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero vh-80">
             <div class="overlay"></div>
             <div class="hero-content">
                 <h1>Where Music Comes to Life</h1>
                 <p>Discover top-notch recording services and equipment</p>
-                <a href="#" class="btn">Book a Session</a>
+                <button class="t-zoom">Book a Session <i class="fa-solid fa-check"></i></button>
             </div>
         </section>
 
@@ -40,19 +41,22 @@
         <section class="services container">
         <h2>Our Services</h2>
             <div class="service-list">
-                <div class="service-item">
+                
+                <div class="service-item shadow-light t-zoom">
                     <div class="service-icon"></div>
                     <h3>Recording</h3>
                     <p>Professional recording services for your music.</p>
                     <a href="/services" class="learn-more">Learn More</a>
                 </div>
-                <div class="service-item">
+                
+                <div class="service-item shadow-light t-zoom">
                     <div class="service-icon"></div>
                     <h3>Mixing</h3>
                     <p>Professional mixing services for your music.</p>
                     <a href="/services" class="learn-more">Learn More</a>
                 </div>
-                <div class="service-item">
+                
+                <div class="service-item shadow-light t-zoom">
                     <div class="service-icon"></div>
                     <h3>Mastering</h3>
                     <p>Professional mastering services for your music.</p>
@@ -65,25 +69,24 @@
         <section class="artists container">
             <h2>Featured Artists</h2>
             <div class="artist-list">
-                <div class="artist-item">
-                    <div class="artist-image"></div>
-                    <!-- <div class="artist-info"> -->
+                <div class="artist-item shadow-light t-zoom">
+                    <!-- <div class="artist-image"></div> -->
+                    <img src="images/twenty-one-pilots-band.webp" alt="The Twenty One Pilots band" class="artist-image" loading="lazy">
                     <div class="artist-content">
-                        <h3>Artist 1</h3>
-                        <p>Artist 1 recorded their latest hit album at Harmony Studios.</p>
+                        <h3>Twenty One Pilots</h3>
+                        <p>Twenty One Pilots recorded their latest hit album at Harmony Studios.</p>
                     </div>
                 </div>
-                <div class="artist-item">
-                    <div class="artist-image"></div>
+                <div class="artist-item shadow-light t-zoom">
+                    <img src="images/the-beatles-band.webp" alt="The beatles band" class="artist-image" loading="lazy">
                     <div class="artist-content">
-                        <!-- <div class="artist-info"> -->
-                        <h3>Artist 2</h3>
-                        <p>Artist 2 recorded their latest hit album at Harmony Studios.</p>
+                        <h3>The Beatles</h3>
+                        <p>The Beatles recorded their latest hit album at Harmony Studios.</p>
                     </div>
                 </div>
             </div>
             <div class="view-all">
-                <a href="/artists">View All Artists</a>
+                <a href="artists.html">View All Artists</a>
             </div>
         </section>
     </main>
@@ -96,9 +99,10 @@
         <div class="quick-links footer-section">
             <h3>Quick Links</h3>
             <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/artists">Artists</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="contact-us">Contact Us</a></li>
             </ul>
         </div>
         <div class="follow-us footer-section">

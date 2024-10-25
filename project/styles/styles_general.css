@@ -1,0 +1,53 @@
+/* Root variables - Global theme configuration */
+:root {
+    --dark-red: #8B0000;
+    --primary-color: #DC143C;
+    --secondary-color: #FFE4E1;
+    --background-color: #fff;
+    --text-color: #333;
+    --footer-background: #333;
+    --footer-text-color: #fff;
+    --button-hover-color: #e0314b;
+    --font-family: 'Arial', sans-serif;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 1.2rem;
+    --font-size-small: 1rem;
+    --container-width: 1200px;
+    --header-height: 80px;
+    --border-radius: 10px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Label a */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover { border-bottom: var(--primary-color) 1px solid; }
+
+/* Zoom Efect */
+.t-zoom { transition: all 0.5s ease; }
+.t-zoom:hover { transform: scale(1.1); }
+
+/* view height */
+.vh-80 { height: 80vh; }
+.vh-60 { height: 60vh; }
+.vh-40 { height: 40vh; }
+
+/* Shadow */
+.shadow-light { box-shadow: var(--box-shadow); }
